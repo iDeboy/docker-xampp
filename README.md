@@ -108,6 +108,8 @@ services:
     volumes:
       # Mount your web pages
       - ./xampp/my_pages:/www
+      #Xampp directory
+      - ./xampp/:/opt/lampp
       # Mount your apache configuration
       - ./xampp/my_apache_conf/:/opt/lampp/apache2/conf.d
       #Save MySQL data to be persistent
