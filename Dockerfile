@@ -5,7 +5,7 @@ ARG BASE_DEBIAN=bookworm-slim
 # We utilize this small alpine layer to cache the downloaded xampp installer
 ################################################################################
 FROM alpine/curl as xampp_downloader
-ARG XAMPP_URL
+ARG XAMPP_URL https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/8.2.4/xampp-linux-x64-8.2.4-0-installer.run/download
 RUN curl -Lo xampp-linux-installer.run $XAMPP_URL
 
 ################################################################################
